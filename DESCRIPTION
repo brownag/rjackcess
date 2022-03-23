@@ -1,0 +1,13 @@
+Package: rjackcess
+Type: Package
+Title: Interface to Jackcess, a Java library for reading from and writing to MS Access databases
+Version: 0.1.0
+Author: Andrew Brown
+Maintainer: Andrew Brown <brown.andrewg@gmail.com>
+Description: rjackcess uses rJava to provide a basic interface to the Jackcess <https://jackcess.sourceforge.io/> Java API for MS Access databases. More information on the API is available in the Javadocs (<https://javadoc.io/doc/com.healthmarketscience.jackcess/jackcess/latest/index.html>). 
+SystemRequirements: Java (8+), Jackcess <https://jackcess.sourceforge.io/>
+License: Apache License (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: rJava
+RoxygenNote: 7.1.2
