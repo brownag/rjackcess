@@ -18,4 +18,4 @@ expect_true(file.exists(tt))
 # db$getTableNames()
 # db$getTable('test')
 
-unlink(tf, td, tt)
+unlink(c(tf, td, tt))
