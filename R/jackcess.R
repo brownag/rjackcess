@@ -16,7 +16,7 @@
 #' - `"V2019"` - A database which was created by MS Access 2019+ (Office 365)
 #' @return a com.healthmarketscience.jackcess.Database object
 #' @export
-#' @importFrom rJava .jnew
+#' @importFrom rJava .jnew .jfield
 Database <- function(dsn, read_only = FALSE, file_format = c("V2019", "V2016", "V2010",
                                                              "V2007", "V2003", "V2000",
                                                              "V1997", "MSISAM", "GENERIC_JET4"), overwrite = FALSE) {
