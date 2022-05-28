@@ -2,14 +2,34 @@
 #'
 #' @param dsn data source file path
 #' @param read_only open connection as read-only? Default `FALSE`
+#' @param file_format one of the following: `"GENERIC_JET4"`, `"MSISAM"`, `"V1997"`, `"V2000"`, `"V2003"`, `"V2007"`, `"V2010"`, `"V2016"`, `"V2019"`. See details.
+#' @param overwrite overwrite existing file? Default `FALSE`
+#' @details
+#' - `"GENERIC_JET4"` - A database which was most likely created programmatically
+#' - `"MSISAM"` - A database which was created by MS Money
+#' - `"V1997"` - A database which was created by MS Access 97
+#' - `"V2000"` - A database which was created by MS Access 2000
+#' - `"V2003"` - A database which was created by MS Access 2002/2003
+#' - `"V2007"` - A database which was created by MS Access 2007
+#' - `"V2010"` - A database which was created by MS Access 2010+
+#' - `"V2016"` - A database which was created by MS Access 2016+
+#' - `"V2019"` - A database which was created by MS Access 2019+ (Office 365)
 #' @return a com.healthmarketscience.jackcess.Database object
 #' @export
 #' @importFrom rJava .jnew
-Database <- function(dsn, read_only = FALSE) {
+Database <- function(dsn, read_only = FALSE, file_format = c("V2019", "V2016", "V2010",
+                                                             "V2007", "V2003", "V2000",
+                                                             "V1997", "MSISAM", "GENERIC_JET4"), overwrite = FALSE) {
+  file_format <- match.arg(file_format)
   f <- rJava::.jnew("java/io/File", path.expand(dsn))
   dbb <- rJava::.jnew("com/healthmarketscience/jackcess/DatabaseBuilder")
   if (read_only) {
     dbb$setReadOnly(TRUE)
+  }
+  if (!file.exists(dsn) || overwrite) {
+    dbb$setFile(f)
+    dbb$setFileFormat(rJava::.jfield("com.healthmarketscience.jackcess.Database$FileFormat", , file_format))
+    return(dbb$create())
   }
   dbb$open(f)
 }

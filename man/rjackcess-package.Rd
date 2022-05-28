@@ -6,6 +6,6 @@
 \alias{rjackcess-package}
 \title{rjackcess: Interface to Jackcess, a Java library for reading from and writing to MS Access databases}
 \description{
-rjackcess uses rJava to provide a basic interface to the Jackcess <https://jackcess.sourceforge.io/> Java API for MS Access databases. More information on the API is available in the Javadocs (<https://javadoc.io/doc/com.healthmarketscience.jackcess/jackcess/latest/index.html>).
+rjackcess uses rJava to provide a basic interface to the Jackcess \url{https://jackcess.sourceforge.io/} Java API for MS Access databases. More information on the API is available in the Javadocs (\url{https://javadoc.io/doc/com.healthmarketscience.jackcess/jackcess/latest/index.html}).
 }
 \keyword{internal}

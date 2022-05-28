@@ -4,16 +4,37 @@
 \alias{Database}
 \title{Initialize a Database object instance for interacting with MS Access database files}
 \usage{
-Database(dsn, read_only = FALSE)
+Database(
+  dsn,
+  read_only = FALSE,
+  file_format = c("V2019", "V2016", "V2010", "V2007", "V2003", "V2000", "V1997",
+    "MSISAM", "GENERIC_JET4"),
+  overwrite = FALSE
+)
 }
 \arguments{
 \item{dsn}{data source file path}
 
 \item{read_only}{open connection as read-only? Default `FALSE`}
+
+\item{file_format}{one of the following: `"GENERIC_JET4"`, `"MSISAM"`, `"V1997"`, `"V2000"`, `"V2003"`, `"V2007"`, `"V2010"`, `"V2016"`, `"V2019"`. See details.}
+
+\item{overwrite}{overwrite existing file? Default `FALSE`}
 }
 \value{
 a com.healthmarketscience.jackcess.Database object
 }
 \description{
 Initialize a Database object instance for interacting with MS Access database files
+}
+\details{
+- `"GENERIC_JET4"` - A database which was most likely created programmatically
+- `"MSISAM"` - A database which was created by MS Money
+- `"V1997"` - A database which was created by MS Access 97
+- `"V2000"` - A database which was created by MS Access 2000
+- `"V2003"` - A database which was created by MS Access 2002/2003
+- `"V2007"` - A database which was created by MS Access 2007
+- `"V2010"` - A database which was created by MS Access 2010+
+- `"V2016"` - A database which was created by MS Access 2016+
+- `"V2019"` - A database which was created by MS Access 2019+ (Office 365)
 }
