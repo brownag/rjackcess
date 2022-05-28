@@ -2,7 +2,7 @@
 % Please edit documentation in R/jackcess.R
 \name{Database}
 \alias{Database}
-\title{Initialize a Database object instance for interacting with MS Access database files}
+\title{Initialize a Jackcess \code{Database} object instance for interacting with MS Access database files}
 \usage{
 Database(
   dsn,
@@ -25,7 +25,7 @@ Database(
 a com.healthmarketscience.jackcess.Database object
 }
 \description{
-Initialize a Database object instance for interacting with MS Access database files
+Initialize a Jackcess \code{Database} object instance for interacting with MS Access database files
 }
 \details{
 \itemize{

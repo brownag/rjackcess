@@ -1,4 +1,4 @@
-#' Initialize a Database object instance for interacting with MS Access database files
+#' Initialize a Jackcess `Database` object instance for interacting with MS Access database files
 #'
 #' @param dsn data source file path
 #' @param read_only open connection as read-only? Default `FALSE`
@@ -28,7 +28,7 @@ Database <- function(dsn, read_only = FALSE, file_format = c("V2019", "V2016", "
   }
   if (!file.exists(dsn) || overwrite) {
     dbb$setFile(f)
-    dbb$setFileFormat(rJava::.jfield("com.healthmarketscience.jackcess.Database$FileFormat", , file_format))
+    dbb$setFileFormat(rJava::.jfield("com.healthmarketscience.jackcess.Database$FileFormat", NULL, file_format))
     return(dbb$create())
   }
   dbb$open(f)
