@@ -22,15 +22,15 @@ importFile(
 
 \item{name}{Table name}
 
-\item{delim}{Delimiter (default (`,`))}
+\item{delim}{Delimiter (default (\verb{,}))}
 
-\item{quote}{Quote character (default `"`)}
+\item{quote}{Quote character (default \verb{"})}
 
 \item{filter}{Optional custom ImportFilter object}
 
-\item{useExistingTable}{logical. Use existing tables? Default: `FALSE`}
+\item{useExistingTable}{logical. Use existing tables? Default: \code{FALSE}}
 
-\item{header}{logical. Input file contains headers? Default: `TRUE`}
+\item{header}{logical. Input file contains headers? Default: \code{TRUE}}
 }
 \description{
 Import a delimited flat file into a new or existing MS Access Database table

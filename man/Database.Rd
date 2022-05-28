@@ -15,11 +15,11 @@ Database(
 \arguments{
 \item{dsn}{data source file path}
 
-\item{read_only}{open connection as read-only? Default `FALSE`}
+\item{read_only}{open connection as read-only? Default \code{FALSE}}
 
-\item{file_format}{one of the following: `"GENERIC_JET4"`, `"MSISAM"`, `"V1997"`, `"V2000"`, `"V2003"`, `"V2007"`, `"V2010"`, `"V2016"`, `"V2019"`. See details.}
+\item{file_format}{one of the following: \code{"GENERIC_JET4"}, \code{"MSISAM"}, \code{"V1997"}, \code{"V2000"}, \code{"V2003"}, \code{"V2007"}, \code{"V2010"}, \code{"V2016"}, \code{"V2019"}. See details.}
 
-\item{overwrite}{overwrite existing file? Default `FALSE`}
+\item{overwrite}{overwrite existing file? Default \code{FALSE}}
 }
 \value{
 a com.healthmarketscience.jackcess.Database object
@@ -28,13 +28,15 @@ a com.healthmarketscience.jackcess.Database object
 Initialize a Database object instance for interacting with MS Access database files
 }
 \details{
-- `"GENERIC_JET4"` - A database which was most likely created programmatically
-- `"MSISAM"` - A database which was created by MS Money
-- `"V1997"` - A database which was created by MS Access 97
-- `"V2000"` - A database which was created by MS Access 2000
-- `"V2003"` - A database which was created by MS Access 2002/2003
-- `"V2007"` - A database which was created by MS Access 2007
-- `"V2010"` - A database which was created by MS Access 2010+
-- `"V2016"` - A database which was created by MS Access 2016+
-- `"V2019"` - A database which was created by MS Access 2019+ (Office 365)
+\itemize{
+\item \code{"GENERIC_JET4"} - A database which was most likely created programmatically
+\item \code{"MSISAM"} - A database which was created by MS Money
+\item \code{"V1997"} - A database which was created by MS Access 97
+\item \code{"V2000"} - A database which was created by MS Access 2000
+\item \code{"V2003"} - A database which was created by MS Access 2002/2003
+\item \code{"V2007"} - A database which was created by MS Access 2007
+\item \code{"V2010"} - A database which was created by MS Access 2010+
+\item \code{"V2016"} - A database which was created by MS Access 2016+
+\item \code{"V2019"} - A database which was created by MS Access 2019+ (Office 365)
+}
 }
