@@ -1,36 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/news/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/Database.html</loc>
-  </url>
-  <url>
-    <loc>/reference/SimpleImportFilter.html</loc>
-  </url>
-  <url>
-    <loc>/reference/exportAll.html</loc>
-  </url>
-  <url>
-    <loc>/reference/importFile.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/rjackcess-package.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>http://humus.rocks/rjackcess/404.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/LICENSE.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/authors.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/index.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/news/index.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/reference/Database.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/reference/SimpleExportFilter.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/reference/SimpleImportFilter.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/reference/exportAll.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/reference/getColumnMetadata.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/reference/getTableNames.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/reference/importFile.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/reference/index.html</loc></url>
+<url><loc>http://humus.rocks/rjackcess/reference/rjackcess-package.html</loc></url>
 </urlset>
+
