@@ -8,4 +8,11 @@
 \description{
 rjackcess uses rJava to provide a basic interface to the Jackcess \url{https://jackcess.sourceforge.io/} Java API for MS Access databases. More information on the API is available in the Javadocs (\url{https://javadoc.io/doc/com.healthmarketscience.jackcess/jackcess/latest/index.html}).
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{http://humus.rocks/rjackcess/}
+}
+
+}
 \keyword{internal}

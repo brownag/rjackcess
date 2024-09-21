@@ -4,6 +4,7 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/brownag/rjackcess/workflows/R-CMD-check/badge.svg)](https://github.com/brownag/rjackcess/actions)
 [![rjackcess Manual](https://img.shields.io/badge/docs-HTML-informational)](http://humus.rocks/rjackcess/)
+[![R-CMD-check](https://github.com/brownag/rjackcess/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/brownag/rjackcess/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 rjackcess uses {rJava} to provide a basic interface to the Jackcess <https://jackcess.sourceforge.io/> Java API for MS Access databases. 

@@ -13,16 +13,16 @@ Database(
 )
 }
 \arguments{
-\item{dsn}{data source file path}
+\item{dsn}{\emph{character}. MS Access database source name (file path).}
 
-\item{read_only}{open connection as read-only? Default \code{FALSE}}
+\item{read_only}{\emph{logical} Open connection as read-only? Default \code{FALSE}}
 
-\item{file_format}{one of the following: \code{"GENERIC_JET4"}, \code{"MSISAM"}, \code{"V1997"}, \code{"V2000"}, \code{"V2003"}, \code{"V2007"}, \code{"V2010"}, \code{"V2016"}, \code{"V2019"}. See details.}
+\item{file_format}{\emph{character}. One of the following: \code{"GENERIC_JET4"}, \code{"MSISAM"}, \code{"V1997"}, \code{"V2000"}, \code{"V2003"}, \code{"V2007"}, \code{"V2010"}, \code{"V2016"}, \code{"V2019"}. See details.}
 
-\item{overwrite}{overwrite existing file? Default \code{FALSE}}
+\item{overwrite}{\emph{logical}. overwrite existing file? Default \code{FALSE}}
 }
 \value{
-a com.healthmarketscience.jackcess.Database object
+A \emph{com.healthmarketscience.jackcess.Database} object
 }
 \description{
 Initialize a Jackcess \code{Database} object instance for interacting with MS Access database files

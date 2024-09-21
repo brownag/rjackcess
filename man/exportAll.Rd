@@ -4,12 +4,33 @@
 \alias{exportAll}
 \title{Export contents of a MS Access Database to Flat Files}
 \usage{
-exportAll(db, dsn)
+exportAll(
+  db,
+  outdir,
+  extension = "csv",
+  header = TRUE,
+  delim = ",",
+  quote = "\\"",
+  filter = SimpleExportFilter()$INSTANCE,
+  ...
+)
 }
 \arguments{
-\item{db}{a Database object}
+\item{db}{A  \emph{com.healthmarketscience.jackcess.Database} object or character path to MS Access Database.}
 
-\item{dsn}{directory path for output files}
+\item{outdir}{Directory path for output files.}
+
+\item{extension}{Output file extension. Default: \code{"csv"}.}
+
+\item{header}{Include column names in header? Default: \code{TRUE}.}
+
+\item{delim}{Output file delimiter. Default: \code{","}}
+
+\item{quote}{Output file quote character. Default: \code{'"'}}
+
+\item{filter}{Export filter. Default: \code{SimpleExportFilter()$INSTANCE}}
+
+\item{...}{Additional arguments passed to \code{Database()} when \code{db} is a file path.}
 }
 \description{
 Export contents of a MS Access Database to Flat Files

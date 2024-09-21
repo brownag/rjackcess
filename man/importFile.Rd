@@ -9,7 +9,7 @@ importFile(
   db,
   name,
   delim = ",",
-  quote = rJava::.jchar("\\""),
+  quote = "\\"",
   filter = SimpleImportFilter()$INSTANCE,
   useExistingTable = FALSE,
   header = TRUE
